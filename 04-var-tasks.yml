@@ -1,0 +1,16 @@
+- name: variables declaration
+  hosts: localhost
+  var:
+    course: "Ansible"
+    trainer: "shiva"
+  tasks:
+  - name: variable override
+    var:
+     course: "Devops"
+    ansible.builtin.debug:
+      msg: "learnig {{course}} from  {{tainer}}"
+  - name: print information
+    ansible.builtin.debug:
+      msg: "learnig {{course}} from  {{tainer}}"
+      
+
