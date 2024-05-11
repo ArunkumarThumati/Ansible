@@ -1,11 +1,11 @@
 - name: variables declaration
   hosts: localhost
-  var:
+  vars: # Variable level declartion
     course: "Ansible"
     trainer: "shiva"
   tasks:
   - name: variable override
-    var:
+    vars: #Tassk level declation Overriding
      course: "Devops"
     ansible.builtin.debug:
       msg: "learnig {{course}} from  {{tainer}}"
