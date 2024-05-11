@@ -1,4 +1,4 @@
-- name: variables declaration
+- name: variables declaration from files
   hosts: localhost
   vars_files:
   - vars.yml

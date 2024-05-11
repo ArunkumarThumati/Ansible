@@ -1,4 +1,4 @@
-- name: variables declaration
+- name: variables declaration from tasks
   hosts: localhost
   vars: # Variable level declartion
     course: "Ansible"
