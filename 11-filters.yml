@@ -1,8 +1,9 @@
 - name: Default values
   hosts: localhost
+  
   vars: 
     greeting: "hello world"
-  numbers: [1, 2, 3, 1, 4]
+    numbers: [1, 2, 3, 1, 4]
   tasks:
   - name: print default value
     ansible.builtin.debug:
@@ -12,6 +13,6 @@
     ansible.builtin.debug:
      msg: "{{ greeting | upper}}"
   
-  - name: print unique numbers
+  - name: remove duplicates
     ansible.builtin.debug:
      msg: "{{ numbers | unique }}"
