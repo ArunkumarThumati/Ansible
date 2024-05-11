@@ -7,7 +7,7 @@
       name: "{{item.name}}"
       state: "{{item.state}}"
 
-  loop:
+  loops:
   - { name: mysql , state: latest}
   - { name: nginx , state: latest}
   - { name: postfix , state: latest}
