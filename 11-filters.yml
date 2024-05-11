@@ -1,7 +1,7 @@
 - name: Default values
   hosts: localhost
   vars: 
-    greetng: "hello world"
+    greeting: "hello world"
   tasks:
   - name: print default value
     ansible.builtin.debug:
