@@ -5,8 +5,8 @@
     greeting: "hello world"
     numbers: [1, 2, 3, 1, 4 ]
     my_dict:
-     course: Devops
-     trainer: shiva
+     course: Ansible
+     trainer: Arun
 
   tasks:
   - name: print default value
@@ -23,4 +23,4 @@
 
   - name: dictonary to items
     ansible.builtin.debug:
-     msg: "{{ my_dict | dict2item }}"
+     msg: "{{ my_dict | dict2items }}"
