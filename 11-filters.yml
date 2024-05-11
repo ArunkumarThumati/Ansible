@@ -3,7 +3,11 @@
   
   vars: 
     greeting: "hello world"
-    numbers: [1, 2, 3, 1, 4]
+    numbers: [1, 2, 3, 1, 4 ]
+    my_dict:
+     course: Devops
+     trainer: shiva
+
   tasks:
   - name: print default value
     ansible.builtin.debug:
@@ -16,3 +20,7 @@
   - name: remove duplicates
     ansible.builtin.debug:
      msg: "{{ numbers | unique }}"
+
+  - name: dictonary to items
+    ansible.builtin.debug:
+     msg: "{{ my_dict | dict2item }}"
