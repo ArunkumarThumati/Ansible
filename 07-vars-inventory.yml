@@ -1,0 +1,8 @@
+- name: variables declaration from inventory
+  hosts: localhost
+
+   
+  tasks:
+  - name: variable override
+    ansible.builtin.debug:
+      msg: "learnig {{course}} from  {{trainer}}"
