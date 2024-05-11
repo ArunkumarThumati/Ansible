@@ -10,5 +10,5 @@
   tasks:
   - name: Print information
     ansible.builtin.debug:
-     mrg: "Hi username {{USERNAME}} password {{PASSWORD}}"
+     mrg: "Hi username: {{USERNAME}}. password: {{PASSWORD}}"
    
