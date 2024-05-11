@@ -12,5 +12,3 @@
   - name: print information
     ansible.builtin.debug:
       msg: "learnig {{course}} from  {{tainer}}"
-      
-
