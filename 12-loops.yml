@@ -9,6 +9,6 @@
     loop:
     - { name: mysql , state: latest}
     - { name: nginx , state: latest}
-    - { name: postfix , state: latest}
+    - { name: postfix , state: absent}
   
   
