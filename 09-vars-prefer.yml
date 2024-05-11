@@ -10,7 +10,7 @@
     private: false
   tasks:
   - name: vars delclartiion
-   vars:
+  vars:
     wish: "vars from tassk"
   
     ansible.builtin.debug:
