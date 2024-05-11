@@ -1,0 +1,12 @@
+- name: Default values
+  hosts: localhost
+  vars: 
+    greetng: "hello world"
+  tasks:
+  - name: print default value
+    ansible.builtin.debug:
+     msg: "{{ course | default('Ansible')}}"
+
+  - name: print in upper case
+    ansible.builtin.debug:
+     msg: "{{ greeting | upper}}"
