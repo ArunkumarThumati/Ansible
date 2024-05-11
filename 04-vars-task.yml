@@ -8,7 +8,7 @@
     vars: #Tassk level declation Overriding
      course: "Devops"
     ansible.builtin.debug:
-      msg: "learnig {{course}} from  {{tainer}}"
+      msg: "learnig {{course}} from  {{trainer}}"
   - name: print information
     ansible.builtin.debug:
-      msg: "learnig {{course}} from  {{tainer}}"
+      msg: "learnig {{course}} from  {{trainer}}"
